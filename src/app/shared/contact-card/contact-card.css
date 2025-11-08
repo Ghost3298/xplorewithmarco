@@ -1,0 +1,62 @@
+.contactCard{
+    width: 450px;
+    height: 200px;
+    background-color: rgba(1,58,99, 0.85);
+    display: flex;
+    color: white;
+}
+
+.contact, .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.contact img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.contact{
+    width: 40%;
+    align-items: center;
+}
+
+.details a{
+    margin: 5px 0px;
+    color: white;
+    text-decoration: none;
+}
+
+.details img{
+    width: 25px;
+}
+
+#whatsapp{
+    position: relative;
+    top: 10px;
+    right: -192px;
+}
+
+@media screen and (max-width:650px) {
+    .contactCard{
+        width: 90svw;
+        height: 150px;
+        padding-top: 10px;
+    }
+
+    .contact img{
+        width: 75px;
+    }
+
+    .details{
+        box-sizing: border-box;
+    }
+
+    #whatsapp{
+        position: relative;
+        top: -10px;
+        right: -160px;
+    }
+}

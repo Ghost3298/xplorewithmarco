@@ -1,0 +1,39 @@
+.main{
+    height: 100svh;
+    width: 100svw;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: 
+    "navbar navbar"
+    "socialMedia router";
+}
+
+app-navbar{
+    grid-area: navbar;
+}
+
+app-social-media{
+    grid-area: socialMedia;
+}
+
+.router{
+    grid-area: router;
+}
+
+@media screen and (max-width:650px) {
+    .main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 75px 1fr 75px;
+        grid-template-areas:
+        "navbar"
+        "router"
+        "socialMedia";
+        height: 100svh;
+    }
+
+    .router{
+        height: 99%;
+        overflow-y: auto;
+    }
+}

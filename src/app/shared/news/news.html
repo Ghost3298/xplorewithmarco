@@ -1,0 +1,11 @@
+<div class="newsCard">
+    <img src="/assets/images/news/{{imgSrc}}">
+    <div class="newsDetails">
+        <h3>{{title}}</h3>
+        <p>{{text}}</p>
+    </div>
+    <span (click)="Like()">
+        <p>{{likes}}</p>
+        <mat-icon>{{clicked ? 'favorite' : 'favorite_border'}}</mat-icon>
+    </span>
+</div>

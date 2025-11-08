@@ -1,0 +1,21 @@
+.contact{
+    display: flex;
+    width: 100%;
+    height: 80svh;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(255,255,255) rgba(0,0,0,0);
+    justify-content: space-between;
+    row-gap: 25px;
+}
+
+@media screen and (max-width:650px) {
+    .contact{
+        justify-content: center;
+        align-items: center;
+    }
+}
