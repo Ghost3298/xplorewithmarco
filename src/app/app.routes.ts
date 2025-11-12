@@ -16,5 +16,8 @@ export const routes: Routes = [
     },
     {
         path:"blog", component: Blog
+    },
+    {
+        path: "**" , component: Home
     }
 ];
